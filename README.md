@@ -44,6 +44,7 @@ To **install the Ersilia CLI**, create a [Conda](https://docs.conda.io/projects/
 
 ```bash
 conda create -n ersilia python=3.10
+conda init
 conda activate ersilia
 ```
 
