@@ -44,7 +44,8 @@ def create_ersilia_cli():
 
     return ersilia_cli
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     print("CLI test start")
     cmd = Command()
     print("CLI test end")

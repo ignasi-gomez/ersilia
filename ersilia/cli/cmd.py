@@ -22,7 +22,7 @@ class Command(object):
         """
         m = importlib.import_module("ersilia.cli.commands.close")
         m.close_cmd()
-    
+
     def delete(self):
         """
         Delete the application.
@@ -36,7 +36,7 @@ class Command(object):
         """
         m = importlib.import_module("ersilia.cli.commands.dump")
         m.dump_cmd()
-    
+
     def example(self):
         """
         Show an example.
@@ -120,4 +120,3 @@ class Command(object):
         """
         m = importlib.import_module("ersilia.cli.commands.uninstall")
         m.uninstall_cmd()
-        

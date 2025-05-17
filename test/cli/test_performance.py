@@ -24,4 +24,4 @@ def test_performance_cmd_bad_model_id():
 
 if __name__ == '__main__':
     test_performance_cmd_ok()
-    test_performance_cmd_bad_model_id()
+    #test_performance_cmd_bad_model_id()
