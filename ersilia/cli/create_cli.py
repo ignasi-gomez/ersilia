@@ -28,6 +28,7 @@ def create_ersilia_cli():
     cmd.info()
     cmd.test()
     cmd.dump()
+    cmd.performance()
 
     # TODO: publishing functionalities
     if is_contributor:
@@ -42,3 +43,8 @@ def create_ersilia_cli():
         cmd.setup()
 
     return ersilia_cli
+
+if __name__ == '__main__':
+    print("CLI test start")
+    cmd = Command()
+    print("CLI test end")

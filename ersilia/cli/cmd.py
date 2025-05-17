@@ -16,20 +16,13 @@ class Command(object):
         m = importlib.import_module("ersilia.cli.commands.catalog")
         m.catalog_cmd()
 
-    def uninstall(self):
-        """
-        Uninstall the application.
-        """
-        m = importlib.import_module("ersilia.cli.commands.uninstall")
-        m.uninstall_cmd()
-
     def close(self):
         """
         Close the application.
         """
         m = importlib.import_module("ersilia.cli.commands.close")
         m.close_cmd()
-
+    
     def delete(self):
         """
         Delete the application.
@@ -37,19 +30,19 @@ class Command(object):
         m = importlib.import_module("ersilia.cli.commands.delete")
         m.delete_cmd()
 
+    def dump(self):
+        """
+        Dump precalculation.
+        """
+        m = importlib.import_module("ersilia.cli.commands.dump")
+        m.dump_cmd()
+    
     def example(self):
         """
         Show an example.
         """
         m = importlib.import_module("ersilia.cli.commands.example")
         m.example_cmd()
-
-    def info(self):
-        """
-        Display information.
-        """
-        m = importlib.import_module("ersilia.cli.commands.info")
-        m.info_cmd()
 
     def fetch(self):
         """
@@ -58,6 +51,20 @@ class Command(object):
         m = importlib.import_module("ersilia.cli.commands.fetch")
         m.fetch_cmd()
 
+    def info(self):
+        """
+        Display information.
+        """
+        m = importlib.import_module("ersilia.cli.commands.info")
+        m.info_cmd()
+
+    def performance(self):
+        """
+        Do a performance test.
+        """
+        m = importlib.import_module("ersilia.cli.commands.performance")
+        m.performance_cmd()
+
     def publish(self):
         """
         Publish data.
@@ -65,26 +72,19 @@ class Command(object):
         m = importlib.import_module("ersilia.cli.commands.publish")
         m.publish_cmd()
 
-    def run(self):
-        """
-        Execute the command.
-        """
-        m = importlib.import_module("ersilia.cli.commands.run")
-        m.run_cmd()
-
-    def stop(self):
-        """
-        Stop the command.
-        """
-        m = importlib.import_module("ersilia.cli.commands.stop")
-        m.stop_cmd()
-
     def restart(self):
         """
         Restart the command.
         """
         m = importlib.import_module("ersilia.cli.commands.restart")
         m.restart_cmd()
+
+    def run(self):
+        """
+        Execute the command.
+        """
+        m = importlib.import_module("ersilia.cli.commands.run")
+        m.run_cmd()
 
     def serve(self):
         """
@@ -100,6 +100,13 @@ class Command(object):
         m = importlib.import_module("ersilia.cli.commands.setup")
         m.setup_cmd()
 
+    def stop(self):
+        """
+        Stop the command.
+        """
+        m = importlib.import_module("ersilia.cli.commands.stop")
+        m.stop_cmd()
+
     def test(self):
         """
         Test the application.
@@ -107,9 +114,10 @@ class Command(object):
         m = importlib.import_module("ersilia.cli.commands.test")
         m.test_cmd()
 
-    def dump(self):
+    def uninstall(self):
         """
-        Dump precalculation.
+        Uninstall the application.
         """
-        m = importlib.import_module("ersilia.cli.commands.dump")
-        m.dump_cmd()
+        m = importlib.import_module("ersilia.cli.commands.uninstall")
+        m.uninstall_cmd()
+        

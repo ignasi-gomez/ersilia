@@ -104,7 +104,7 @@ def catalog_cmd():
                 if not catalog_table.data:
                     click.echo(
                         click.style(
-                            "No local models available. Please fetch a model by running 'ersilia fetch' command",
+                            "Pelusso No local models available. Please fetch a model by running 'ersilia fetch' command",
                             fg="red",
                         )
                     )
